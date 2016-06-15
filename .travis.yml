@@ -9,7 +9,7 @@ deploy:
   bucket: trails-code-deploy-travis-ci-demo
   key: tcdtcd
   revision_type: github
-  application: trails-code-deploy-travis-ci-demo
+  application: CodeDeployTravisCIDemo
   deployment_group: CodeDeployTravisCIDemo-DplyGrp
   on:
     repo: ryanwilliamquinn/trails-code-deploy-travis-ci-demo
