@@ -20,6 +20,12 @@ module.exports = [
     handler: 'ViewController.helloWorld'
   },
 
+  {
+    method: 'GET',
+    path: '/node',
+    handler: 'ViewController.helloWorld'
+  },
+
   /**
    * Constrain the DefaultController.info handler to accept only GET requests.
    */
