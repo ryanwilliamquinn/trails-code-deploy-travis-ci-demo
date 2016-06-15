@@ -1,2 +1,2 @@
 #!/bin/bash
-pkill -9 node
+sudo pkill -9 node
