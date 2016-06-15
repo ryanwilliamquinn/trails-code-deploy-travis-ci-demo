@@ -1,11 +1,10 @@
 #!/bin/bash
 
-sudo /etc/init.d/nginx start
-
+# these commands run as root
+/etc/init.d/nginx start
 npm i -g forever
-
-su ec2-user
 cd /home/ec2-user
 
-npm install
-forever start server.js
+# these commands should run as ec2-user
+su -c "npm install" -m "ec2-user"
+su -c "forever start server.js" -m "ec2-user"

@@ -3,6 +3,10 @@ os: linux
 files:
     - source: /
       destination: /home/ec2-user/
+permissions:
+    - object: /
+      owner: ec2-user
+      group: ec2-user
 hooks:
   ApplicationStart:
     - location: scripts/start.sh
