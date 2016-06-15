@@ -1,13 +1,13 @@
 version: 0.0
 os: linux
 files:
-    + source: /
+    - source: /
       destination: /home/ec2-user/
 hooks:
   ApplicationStart:
-    + location: scripts/start.sh
+    - location: scripts/start.sh
       timeout: 300
   ApplicationStop::
-    + location: scripts/stop.sh
+    - location: scripts/stop.sh
       timeout: 300
 
