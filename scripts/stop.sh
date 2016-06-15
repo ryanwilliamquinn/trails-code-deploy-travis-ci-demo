@@ -1,2 +1,2 @@
 #!/bin/bash
-su -c "forever stopall" -m "ec2-user"
+sudo -u ec2-user -H sh -c "forever stopall"

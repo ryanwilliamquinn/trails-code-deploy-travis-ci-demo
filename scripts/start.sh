@@ -6,5 +6,4 @@ npm i -g forever
 cd /home/ec2-user
 
 # these commands should run as ec2-user
-su -c "npm install" -m "ec2-user"
-su -c "forever start server.js" -m "ec2-user"
+sudo -u ec2-user -H sh -c "npm install && forever start server.js"
