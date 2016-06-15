@@ -1,3 +1,15 @@
 language: node_js
 node_js:
-  - "4.4.5"
+- 4.4.5
+deploy:
+  provider: codedeploy
+  access_key_id: AKIAINWFL4TXSPOQJXVQ
+  secret_access_key:
+    secure: NNcwfO9T3dn1DEZ5JaKMr47ligrsC7olQurOxTQ8XZRtdN8bcmc8v1R3f7GpHHtMsBRLPvATgktUfxU66yc24ouIy8DORJpko8bK6YU2p6sifeeC8t/V9mfDqOG+NNIPhEfXZdQF3sOTn1pLvFtez5m1NdTPW7+x/NqBgiFTmZ6apo7eWKkm6MOGxQTtOryLquwUOgpRvD+iIDsOA8JoZvDGwpVEaF7Wb4d9oDE7rKHYOSHTKAgMSsw4qvslLsVHq8FHh+DCYp9LoUeMqb2xvo77py1WtWxkleU3pK+TZUJWPULT4uO3GpRiqGLPEDz3P6pnHPpHNvcp8hH7gOk0RadfLj+Nb+Qt3tJHEfrb8SGM0wrFH6u9aWsy1iocA6WM1sUURMVQ3+3fWSBWslVDqi/0+Y0QeN5dcXaTNrdC4EgUb+7iBnQSoL3CQ2UyZGV0BGROnrVMMAvX/32kWsimv+cN4wfKX2DIH5ujgpOVFvXJYHT2qUTVRXealeaSM9+SMhJXGC5cPPFrpaX4FKImGclUPaI3NYRlg3Qlzkkpgs0ru8vMOhBtTjwsyEFuXPCzyA9fJBUkGzIWnD2d1jKF+arz7KFqBMRFD4mmHKY8AZTwpuCAkEweOATSt6/vO2dOYNXhUikbeH76XlFdovgWI/jUzCoi6H9oELOsiVpjlJg=
+  bucket: trails-code-deploy-travis-ci-demo
+  key: tcdtcd
+  revision_type: github
+  application: trails-code-deploy-travis-ci-demo
+  deployment_group: CodeDeployTravisCIDemo-DplyGrp
+  on:
+    repo: ryanwilliamquinn/trails-code-deploy-travis-ci-demo
